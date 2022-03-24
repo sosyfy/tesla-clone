@@ -5,8 +5,9 @@ function ModelX() {
   return (
     <div>
       <Hero
-        title="Model x"
+        title="Model X"
         bgImage="/model-x.jpg"
+        bgImageSmall="/model-x-hero.jfif"
         subTitle="Plaid"
         heading1="333mi"
         sub1="Range(EPA est.)"

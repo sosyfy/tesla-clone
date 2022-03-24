@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 .flex {
-    z-index: 1;
+    z-index: 10;
     display: flex;
     justify-content: space-around;
     right: 0;
@@ -48,6 +48,7 @@
 }
 .header__menu ul {
     display: flex;
+    align-items: center;
 }
 .header__menu ul li {
     font-weight: 600;
@@ -55,12 +56,90 @@
     margin: 0.2rem;
     padding: 0.3rem 0.8rem;
     border-radius: 13px;
+    cursor: pointer;
 }
 .header li:hover {
     background-color: hsl(11, 0%, 96%);
     opacity: 0.6;
 }
+.sidebar::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.sidebar {
+   position:fixed ;
+   overflow-y: scroll;
+   box-sizing: content-box;
+   z-index: 30;
+   top: 0;
+   bottom:0 ;
+   opacity: 1;
+   right: 0;
+   width: 60vw;
+   width: 15rem;
+   padding: 5rem 2rem 2rem 2rem;
+   background-color: white;
+}
+.sidebar-items {
+    display: flex;
+    opacity: 1;
+    z-index: 30;
+    flex-direction: column;
+    gap: 1rem;  
+}
 
+.sidebar-items > a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: black;
+    opacity: 0.75;
+    padding: 0.3rem 0.7rem;
+}
+.sidebar-items > a:hover {
+    background-color: hsl(11, 0%, 96%);
+    opacity: 1;
+    border-radius: 13px;
+}
+.sidebar-items svg {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+}
+.sidebar-items svg:hover{
+    background-color: hsl(11, 0%, 96%);
+    border-radius: 50%;
+}
+.mobile {
+    display: none;
+    opacity: 1;
+    z-index: 30;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.mobile > a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: black;
+    opacity: 0.75;
+    padding: 0.3rem 0.7rem;
+}
+
+.mobile > a:hover {
+    background-color: hsl(11, 0%, 96%);
+    opacity: 1;
+    border-radius: 13px;
+}
+.mobile svg {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+}
+.mobile svg:hover{
+    background-color: hsl(11, 0%, 96%);
+    border-radius: 50%;
+}
 @media only screen and (max-width:1000px){
 .header .flex {
     display: flex;
@@ -90,6 +169,13 @@
       background-color: hsl(11, 0%, 96%);
     opacity: 0.6;  
     font-size: 0.85rem; 
+  }
+  .mobile {
+      display: flex;
+  }
+  .sidebar {
+      width: 16rem;
+      padding: 4rem 2rem 2rem 2rem;
   }
   
 }

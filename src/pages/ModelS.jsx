@@ -7,6 +7,7 @@ function ModelS() {
       <Hero
         title="Model S"
         bgImage="/model-s.jpg"
+        bgImageSmall="/model-s-hero.jfif"
         subTitle='Plaid'
         heading1='396mi'
         sub1='Range(EPA est.)'

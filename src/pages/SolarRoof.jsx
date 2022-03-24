@@ -7,6 +7,7 @@ function SolarRoof() {
       <Hero
         title2="Solar Roof"
         bgImage="/solar-roof.jpg"
+        bgImageSmall="/solar-roof-page.png"
         subTitle="Transform your roof and produce clean energy"
         heading1="$"
         sub1="Beautiful Solar"

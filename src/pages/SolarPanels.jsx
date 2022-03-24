@@ -7,6 +7,7 @@ function SolarPanels() {
       <Hero
         title2="Solar for Existing Roofs"
         bgImage="/solar-panel.jpg"
+        bgImageSmall="/solar-panels-page.jfif"
         subTitle="Lowest Cost Solar Panels in America"
         subTitle2="Money Back guarante"
         heading1="$"

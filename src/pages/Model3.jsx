@@ -7,6 +7,7 @@ function Model3() {
       <Hero
         title="Model 3"
         bgImage="/model-3.jpg"
+        bgImageSmall="/model-3-page.jfif"
         heading1="3.1s"
         sub1="0-60 mph*"
         heading2="358mi"

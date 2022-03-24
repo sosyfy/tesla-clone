@@ -7,6 +7,7 @@ function Hero({
   title,
   title2,
   bgImage,
+  bgImageSmall,
   leftButton,
   rightButton,
   subTitle,
@@ -22,7 +23,7 @@ function Hero({
   sub4,
 }) {
   return (
-    <Wrapper bgImage={bgImage}>
+    <Wrapper bgImage={bgImage} bgImageSmall={bgImageSmall}>
       <div className="hero_components">
         <div className="hero__heading">
           <h1>{title}</h1>
@@ -99,4 +100,8 @@ const Wrapper = styled.div`
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen  and (max-width: 900px) {
+    background-image: ${(props) => `url("/images/${props.bgImageSmall}")`};
+  }
 `;

@@ -7,6 +7,7 @@ function ModelY() {
       <Hero
         title="Model Y"
         bgImage="/model-y.jpg"
+        bgImageSmall="/model-y-hero.jfif"
         heading1="76cu ft"
         sub1="Cargo Space"
         heading2="330mi"
