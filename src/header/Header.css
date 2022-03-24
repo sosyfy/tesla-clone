@@ -3,6 +3,7 @@
     top: 0;
     right: 0;
     left: 0;
+    overflow: hidden;
 }
 .flex {
     z-index: 1;
@@ -10,15 +11,23 @@
     justify-content: space-around;
     right: 0;
     left: 0;
+    background: transparent;
+    padding: 0.5rem;
     position: fixed;
 }
 .header__logo {
    display: flex;
+   background: transparent;
+
    align-items: center;
 }
 .header__logo img {
     object-fit: contain;
     height: 16px;
+}
+.header__models {
+   background: transparent;
+
 }
 .header__models ul {
    display: flex;
@@ -26,18 +35,23 @@
    justify-content:space-between;
 }
 .header__models ul li {
+    font-weight: 600;
+    font-size: 14px;
     margin: 0.2rem;
     padding: 0.3rem 0.8rem;
     border-radius: 13px;
 }
 .header__menu {
     right: 0;
+    background: transparent;
     margin-right: 0;
 }
 .header__menu ul {
     display: flex;
 }
 .header__menu ul li {
+    font-weight: 600;
+    font-size: 14px;
     margin: 0.2rem;
     padding: 0.3rem 0.8rem;
     border-radius: 13px;
