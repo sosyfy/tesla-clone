@@ -102,8 +102,8 @@
 
   .hero_components {
     width: 100%;
-    height: 90vh;
-    margin-top: 2rem;
+    height: 94vh;
+    margin-top: 1rem;
   }
 
   .hero__buttons {
@@ -137,4 +137,10 @@
   width: 60vw;
 }
 
+}
+@media only screen and (max-width:768px ){
+  .hero_components {
+    width: 100%;
+    height: 80vh;
+  }
 }
